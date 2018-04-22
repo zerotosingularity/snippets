@@ -27,6 +27,16 @@ pip list | grep the_pip_package_you_seek
 nvcc --version
 ```
 
+## CuDNN version
+```bash
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
+
+## Check Nvidia GPU
+```bash
+nvidia-smi
+```
+
 # Tmux
 
 ## list sessions
