@@ -59,14 +59,16 @@ Ctrl+b o
 Ctrl+b z
 ```
 
+
+## kill pane
+```bash
+Ctrl+b x
+```
+
+
 # Linux
 ## Print linux version info
 
 ```bash
 cat /etc/*-release
-```
-
-## kill pane
-```bash
-Ctrl+b x
 ```
