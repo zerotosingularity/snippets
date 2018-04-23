@@ -82,3 +82,8 @@ Ctrl+b x
 ```bash
 cat /etc/*-release
 ```
+
+```bash
+apt-get update
+apt-get upgrade
+```
