@@ -84,6 +84,11 @@ cat /etc/*-release
 ```
 
 ```bash
-apt-get update
-apt-get upgrade
+#!/bin/sh
+sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
+if [ -f "/var/run/reboot-required" ]; then
+    /bin/cat /var/run/reboot-required
+fi
 ```
