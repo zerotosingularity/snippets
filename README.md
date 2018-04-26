@@ -83,6 +83,7 @@ Ctrl+b x
 cat /etc/*-release
 ```
 
+## update your linux
 ```bash
 #!/bin/sh
 sudo apt-get update && sudo apt-get dist-upgrade -y
