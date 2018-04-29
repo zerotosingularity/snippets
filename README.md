@@ -93,3 +93,11 @@ if [ -f "/var/run/reboot-required" ]; then
     /bin/cat /var/run/reboot-required
 fi
 ```
+
+## Which kernel you are running
+```bash
+uname -r
+```
+
+## Having trouble installing update because of a full /boot drive
+[Ipbastola: Safest way to clean up boot partition](https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600)
