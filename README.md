@@ -120,7 +120,7 @@ docker build -t container_tag_name .
 # -d: detached
 # -p: external_port:internal_port
 # --name: running container name
-# (frontend): container tag
+# (frontend): container_tag_name
 
 docker run -d -p 8080:80 --name=frontendlocal frontend
 ```
