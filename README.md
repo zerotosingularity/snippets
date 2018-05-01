@@ -7,6 +7,7 @@ A place to collect some code snippets I seem to usually need and forget at the s
 2. [Bash](#bash)
 3. [Tmux](#tmux)
 4. [Linux](#linux)
+5. [Docker](#docker)
 
 # Python
 
@@ -101,3 +102,32 @@ uname -r
 
 ## Having trouble installing update because of a full /boot drive
 [Ipbastola: Safest way to clean up boot partition](https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600)
+
+# Docker
+
+## List containers
+```bash
+docker ps
+```
+
+## Build container in current directory
+```bash
+docker build -t container_tag_name .
+```
+
+## Run container detached
+```bash
+# -d: detached
+# -p: external_port:internal_port
+# --name: running container name
+# (frontend): container tag
+
+docker run -d -p 8080:80 --name=frontendlocal frontend
+```
+
+## Connect bash to a running container
+```bash
+docker exec -it container_name /bin/bash
+```
+
+
