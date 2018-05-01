@@ -107,7 +107,11 @@ uname -r
 
 ## List containers
 ```bash
+# Running containers
 docker ps
+
+# Local container images
+docker images
 ```
 
 ## Build container in current directory
