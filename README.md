@@ -134,4 +134,8 @@ docker run -d -p 8080:80 --name=frontendlocal frontend
 docker exec -it container_name /bin/bash
 ```
 
-
+## Start a container that will be proxied by nginx-proxy
+(note: the --network flag is not mentioned in the docs, but I needed it to fix a connection problem)
+```bash
+docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity_site
+```
