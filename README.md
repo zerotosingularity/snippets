@@ -19,35 +19,40 @@ vc2.__version__
 
 ## Pip package version
 ```bash
-pip list | grep the_pip_package_you_seek
+$ pip list | grep the_pip_package_you_seek
 ```
 
 # Bash
 ## Cuda version
 ```bash
-nvcc --version
+$ nvcc --version
 ```
 
 ## CuDNN version
 ```bash
-cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+$ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
 
 ## Check Nvidia GPU
 ```bash
-nvidia-smi
+$ nvidia-smi
+```
+
+## Nginx test config
+```bash
+$ nginx -t
 ```
 
 # Tmux
 
 ## list sessions
 ```bash
-tmux list-sessions
+$ tmux list-sessions
 ```
 
 ## attach to session
 ```bash
-tmux attach-session -t #
+$ tmux attach-session -t #
 ```
 
 ## split vertically
@@ -81,7 +86,7 @@ Ctrl+b x
 ## Print linux version info
 
 ```bash
-cat /etc/*-release
+$ cat /etc/*-release
 ```
 
 ## update your linux
@@ -108,15 +113,15 @@ uname -r
 ## List containers
 ```bash
 # Running containers
-docker ps
+$ docker ps
 
 # Local container images
-docker images
+$ docker images
 ```
 
 ## Build container in current directory
 ```bash
-docker build -t container_tag_name .
+$ docker build -t container_tag_name .
 ```
 
 ## Run container detached
@@ -126,16 +131,16 @@ docker build -t container_tag_name .
 # --name: running container name
 # (frontend): container_tag_name
 
-docker run -d -p 8080:80 --name=frontendlocal frontend
+$ docker run -d -p 8080:80 --name=frontendlocal frontend
 ```
 
 ## Connect bash to a running container
 ```bash
-docker exec -it container_name /bin/bash
+$ docker exec -it container_name /bin/bash
 ```
 
 ## Start a container that will be proxied by nginx-proxy
 (note: the --network flag is not mentioned in the docs, but I needed it to fix a connection problem)
 ```bash
-docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity_site
+$ docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity_site
 ```
