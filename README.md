@@ -8,6 +8,7 @@ A place to collect some code snippets I seem to usually need and forget at the s
 3. [Tmux](#tmux)
 4. [Linux](#linux)
 5. [Docker](#docker)
+5. [Conda](#conda)
 
 # Python
 
@@ -143,4 +144,16 @@ $ docker exec -it container_name /bin/bash
 (note: the --network flag is not mentioned in the docs, but I needed it to fix a connection problem)
 ```bash
 $ docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity_site
+```
+
+# Conda
+
+## Create an environment
+```
+conda create --name myenv
+```
+
+## Create an environment from a file
+```
+conda env create -f environment.yml
 ```
