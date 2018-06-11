@@ -157,3 +157,10 @@ conda create --name myenv
 ```
 conda env create -f environment.yml
 ```
+
+## List existing environments
+```
+conda info --envs
+# OR
+conda env list
+```
