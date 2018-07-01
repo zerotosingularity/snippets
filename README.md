@@ -23,7 +23,8 @@ vc2.__version__
 $ pip list | grep the_pip_package_you_seek
 ```
 
-# Bash
+# Nvidia 
+
 ## Cuda version
 ```bash
 $ nvcc --version
@@ -38,6 +39,8 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```bash
 $ nvidia-smi
 ```
+
+# Nginx
 
 ## Nginx test config
 ```bash
