@@ -8,7 +8,8 @@ A place to collect some code snippets I seem to usually need and forget at the s
 3. [Tmux](#tmux)
 4. [Linux](#linux)
 5. [Docker](#docker)
-5. [Conda](#conda)
+6. [Conda](#conda)
+7. [Tensorflow](#tensorflow)
 
 # Python
 
@@ -166,4 +167,12 @@ conda env create -f environment.yml
 conda info --envs
 # OR
 conda env list
+```
+
+# Tensorflow
+
+## Tensorflow version
+```bash
+python -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 2
+python3 -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 3
 ```
