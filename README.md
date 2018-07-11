@@ -152,27 +152,33 @@ $ docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity
 
 # Conda
 
-## Create an environment
+## Update the current environment based on environment file
+
+```bash
+$ conda env update
 ```
-conda create --name myenv
+
+## Create an environment
+```bash
+$ conda create --name myenv
 ```
 
 ## Create an environment from a file
-```
-conda env create -f environment.yml
+```bash
+$ conda env create -f environment.yml
 ```
 
 ## List existing environments
-```
-conda info --envs
+```python
+$ conda info --envs
 # OR
-conda env list
+$ conda env list
 ```
 
 # Tensorflow
 
 ## Tensorflow version
 ```bash
-python -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 2
-python3 -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 3
+$ python -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 2
+$ python3 -c 'import tensorflow as tf; print(tf.__version__)'  # for Python 3
 ```
