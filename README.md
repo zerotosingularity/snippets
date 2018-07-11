@@ -107,7 +107,7 @@ fi
 
 ## Which kernel you are running
 ```bash
-uname -r
+$ uname -r
 ```
 
 ## Having trouble installing update because of a full /boot drive
