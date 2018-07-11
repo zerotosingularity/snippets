@@ -41,6 +41,11 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 $ nvidia-smi
 ```
 
+## Run script on a specific GPU
+```bash
+$ CUDA_VISIBLE_DEVICES=0 python some_script.py
+```
+
 # Nginx
 
 ## Nginx test config
