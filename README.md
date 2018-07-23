@@ -174,7 +174,7 @@ $ conda env create -f environment.yml
 ```
 
 ## List existing environments
-```python
+```bash
 $ conda info --envs
 # OR
 $ conda env list
