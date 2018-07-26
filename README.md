@@ -4,6 +4,7 @@ A place to collect some code snippets I seem to usually need and forget at the s
 # Table of Contents
 
 1. [Python](#python)
+2. [Nvidia](#nvidia)
 2. [Bash](#bash)
 3. [Tmux](#tmux)
 4. [Linux](#linux)
@@ -39,6 +40,12 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ## Check Nvidia GPU
 ```bash
 $ nvidia-smi
+```
+
+### alternative: gpustat
+```bash
+$ pip install gpustat
+$ gpustat -cp
 ```
 
 ## Run script on a specific GPU
