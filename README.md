@@ -187,6 +187,11 @@ $ conda info --envs
 $ conda env list
 ```
 
+## Save all info about your packages
+```bash
+conda list -e > requirements.txt
+```
+
 # Tensorflow
 
 ## Tensorflow version
