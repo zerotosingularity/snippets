@@ -192,6 +192,11 @@ $ conda env list
 conda list -e > requirements.txt
 ```
 
+## delete an environment
+```bash
+conda env remove --name ENV_NAME
+```
+
 # Tensorflow
 
 ## Tensorflow version
