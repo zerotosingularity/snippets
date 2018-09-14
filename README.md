@@ -71,6 +71,10 @@ $ tmux list-sessions
 ```bash
 $ tmux attach-session -t #
 ```
+## kill session
+```bash
+$ tmux kill-session -t SESSION_ID
+```
 
 ## split vertically
 ```bash
@@ -92,12 +96,10 @@ Ctrl+b o
 Ctrl+b z
 ```
 
-
 ## kill pane
 ```bash
 Ctrl+b x
 ```
-
 
 # Linux
 ## Print linux version info
