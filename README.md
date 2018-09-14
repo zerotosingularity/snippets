@@ -14,10 +14,16 @@ A place to collect some code snippets I seem to usually need and forget at the s
 
 # Python
 
-## Opencv version
-```bash
-import cv2
-vc2.__version__
+## Package version
+```python
+import some_package
+some_package.__version__
+```
+
+## Module content
+```python
+import some_module
+dir(some_module)
 ```
 
 ## Pip package version
