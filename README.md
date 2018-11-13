@@ -170,6 +170,16 @@ $ docker exec -it container_name /bin/bash
 $ docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity_site
 ```
 
+## Force remove a container:
+```bash
+docker rmi -f <image_id> 
+```
+
+## Remove all <none> containers (except the ones that need to be forced)
+    ```
+    docker rmi $(docker images | grep none | awk '{print $3}')
+    ```
+
 # Conda
 
 ## Update the current environment based on environment file
