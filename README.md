@@ -35,6 +35,12 @@ $ pip list | grep the_pip_package_you_seek
 
 ## Cuda version
 ```bash
+cat /usr/local/cuda/version.txt
+```
+
+or with nvcc installed:
+
+```bash
 $ nvcc --version
 ```
 
