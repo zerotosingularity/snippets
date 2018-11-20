@@ -73,6 +73,11 @@ $ CUDA_VISIBLE_DEVICES=0 python some_script.py
 $ nginx -t
 ```
 
+## Nginx restart (Ubuntu)
+```bash
+$ systemctl restart nginx
+```
+
 # Tmux
 
 ## list sessions
