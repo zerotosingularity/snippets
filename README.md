@@ -82,7 +82,7 @@ $ tmux list-sessions
 
 ## attach to session
 ```bash
-$ tmux attach-session -t #
+$ tmux attach-session -t #tmux_session_id
 ```
 ## kill session
 ```bash
@@ -107,6 +107,7 @@ Ctrl+b o
 ## zoom to current pane
 ```bash
 Ctrl+b z
+# Use again to zoom out again
 ```
 
 ## kill pane
