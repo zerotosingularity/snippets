@@ -205,6 +205,11 @@ $ conda create --name myenv
 $ conda env create -f environment.yml
 ```
 
+## Create an environment with a specific Python version
+```
+$ conda create -n myenv python=3.6 # change 'myenv' and '3.6' to your values
+```
+
 ## List existing environments
 ```bash
 $ conda info --envs
