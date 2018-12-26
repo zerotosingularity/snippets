@@ -185,13 +185,18 @@ $ docker run -e VIRTUAL_HOST=DNS_NAME --network=nginx-proxy -d zerotosingularity
 
 ## Force remove a container:
 ```bash
-docker rmi -f <image_id> 
+$ docker rmi -f <image_id> 
 ```
 
 ## Remove all <none> containers (except the ones that need to be forced)
-    ```
-    docker rmi $(docker images | grep none | awk '{print $3}')
-    ```
+```bash
+$ docker rmi $(docker images | grep none | awk '{print $3}') 
+```
+
+## Remove all unused data
+```bash
+$ docker system prune -a
+```
 
 # Conda
 
