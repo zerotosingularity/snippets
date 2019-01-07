@@ -120,6 +120,15 @@ Ctrl+b z
 Ctrl+b x
 ```
 
+## Equal horizontal width
+```bash
+Ctrl+b, Alt+1
+```
+Or (default on Ubuntu)
+```bash
+Ctrl+b, Esc+1
+```
+
 # Linux
 ## Print linux version info
 
