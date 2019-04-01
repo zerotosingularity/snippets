@@ -45,6 +45,11 @@ or with nvcc installed:
 $ nvcc --version
 ```
 
+Install nvcc:
+```bash
+$ (sudo) apt install nvidia-cuda-toolkit
+```
+
 ## CuDNN version
 ```bash
 $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
