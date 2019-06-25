@@ -71,6 +71,12 @@ $ gpustat -cp
 $ CUDA_VISIBLE_DEVICES=0 python some_script.py
 ```
 
+or
+```bash
+$ export CUDA_VISIBLE_DEVICES=0
+$ python some_script.py
+```
+
 # Nginx
 
 ## Nginx test config
