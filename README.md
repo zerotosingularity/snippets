@@ -32,6 +32,19 @@ dir(some_module)
 $ pip list | grep the_pip_package_you_seek
 ```
 
+## GPU Count PyTorch
+```python
+import torch
+torch.cuda.device_count()
+```
+
+## Select GPU PyTorch
+```python
+import torch
+torch.cuda.set_device(device_num)
+```
+[More PyTorch GPU options](https://pytorch.org/docs/stable/cuda.html)
+
 # Nvidia 
 
 ## Cuda version
