@@ -113,6 +113,12 @@ $ tmux list-sessions
 ```bash
 $ tmux attach-session -t #tmux_session_id
 ```
+
+## detach current session
+```bash
+Ctrl+b d
+```
+
 ## kill session
 ```bash
 $ tmux kill-session -t SESSION_ID
