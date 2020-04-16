@@ -90,6 +90,21 @@ $ export CUDA_VISIBLE_DEVICES=0
 $ python some_script.py
 ```
 
+# Bash
+
+## Rename all files in subdirectories
+
+In the example we replace all *.JPG files with *.jpg:
+
+```bash
+$ find . -name "*.JPG" -exec bash -c 'mv "$1" "${1%.JPG}".jpg' - '{}' \;
+```
+
+## Only count images in all directories
+```bash
+$ ls -lR | grep jpg | wc -l
+```
+
 # Nginx
 
 ## Nginx test config
