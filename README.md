@@ -105,6 +105,21 @@ $ find . -name "*.JPG" -exec bash -c 'mv "$1" "${1%.JPG}".jpg' - '{}' \;
 $ ls -lR | grep jpg | wc -l
 ```
 
+## Untar multiple files into their own folders
+```bash
+#!/bin/bash
+
+for pkg in *.tar; do
+    where="${pkg%.tar}"
+
+    echo $where
+
+    [ -d "$where" ] || mkdir -p "$where"
+
+    tar xfv $pkg -C "$where"
+done
+```
+
 # Nginx
 
 ## Nginx test config
