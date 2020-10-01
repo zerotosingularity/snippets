@@ -34,8 +34,7 @@ $ pip list | grep the_pip_package_you_seek
 
 ## Pip install from Github Commit
 ```bash
-#Install onnx-tensorflow v1.6.0
-pip install git+https://github.com/onnx/onnx-tensorflow.git@79fcc26a9546661dd3a512b9d47a0fc6f5fb2662
+pip install git+https://github.com/username/repo-name.git@commit-hash
 ```
 
 ## GPU Count PyTorch
